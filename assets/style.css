@@ -1,0 +1,486 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* TEXT FORMATING */
+
+.text-blue {
+  color: #468ec2;
+}
+
+p {
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  align-items: center;
+  background-color: #d7eeff;
+}
+
+header .logo img {
+  width: 130px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 35px;
+  color: #333;
+}
+nav ul li a:hover {
+  color: black;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(103, 103, 230);
+}
+
+.buttonHeader button {
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 4px;
+  background-color: rgb(93, 167, 219);
+}
+
+.buttonHeader button:hover {
+  background-color: #468ec2;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+/* MAIN */
+main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+/* HOME */
+main #home {
+  display: flex;
+  height: 550px;
+  padding: 20px;
+  justify-content: center;
+  box-sizing: content-box;
+  align-items: center;
+}
+
+main #home h1 {
+  margin: 25px 0;
+}
+
+h1 .home-heading {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#home article p {
+  line-height: 30px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+section .download {
+  display: flex;
+
+  gap: 30px;
+}
+
+section .download img {
+  height: 50px;
+}
+
+.image-home img {
+  max-width: 590px;
+}
+
+/* SECTION 1 FITUR */
+#fitur .main-fitur {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#fitur img {
+  max-width: 700px;
+}
+
+#fitur {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#fitur .fiturArticle .fiturDescription a {
+  padding: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #468ec2;
+}
+
+#fitur .fiturArticle .fiturDescription a:hover {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgb(36, 72, 83);
+  text-decoration-thickness: 2px;
+}
+
+/* SECTION FITUR TEXT FORMAT */
+.fiturArticle h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.fiturArticle p {
+  font-size: 20px;
+}
+
+/* PRODUCT */
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.wave-top {
+  background-image: url("./images/wave-top.svg");
+  height: 108px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -135px;
+}
+
+.product-title {
+  background-color: #c4e4fc;
+  padding: 20px;
+  text-align: center;
+}
+
+.fiturCard {
+  background-color: #d7eeff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.fiturCard .card {
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.gradient-bottom {
+  height: 200px;
+  background: rgb(253, 254, 254);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 254, 254, 1) 39%,
+    rgba(215, 238, 255, 1) 84%
+  );
+}
+
+/* PRODUCT TEXT FORMAT */
+.product-title h2 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+/* TESTIMONI */
+#testimoni {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+#testimoni .testimoni-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-testimoni {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 10px;
+}
+.card-testimoni .card {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7eeff;
+  border-radius: 10px;
+  padding: 25px;
+  gap: 10px;
+}
+
+.card-testimoni .card:hover {
+  transition: 0.2s ease-out;
+  transform: scale(1.08);
+}
+
+.userDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#testimoni .userImage img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#testimoni .userImageDescription {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+#testimoni .userImageDescription .userDescription {
+  flex-grow: 4;
+}
+
+/* TESTIMONI TEXT FORMAT */
+
+.testimoni-title {
+  font-size: 32px;
+}
+
+.card-testimoni .card .userDescription h3 {
+  font-size: 22px;
+}
+
+.card-testimoni .card .userArticle p {
+  line-height: 20px;
+  font-size: 15px;
+  text-align: justify;
+  color: #333;
+  font-weight: 500;
+}
+
+.card-testimoni .card .userDescription p {
+  font-size: 18px;
+}
+
+.more a {
+  text-decoration: none;
+  color: #333;
+}
+
+.more a:hover {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+}
+
+/* HARGA */
+#harga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7f5ff;
+  gap: 20px;
+  padding: 40px;
+}
+
+#harga .hargaMainTitle h2 {
+  font-size: 42px;
+}
+
+#harga .card-harga {
+  width: 95%;
+  display: flex;
+  padding: 30px 0;
+  gap: 45px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#harga .card-harga .card {
+  width: 250px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 10px;
+  box-shadow: 0.2px 0.2px 10px;
+  margin-bottom: 50px;
+}
+
+#harga .card-harga .cardBig {
+  transform: scale(1.1);
+  background-color: #ffdd86;
+}
+
+#harga .card-harga .silver {
+  background-color: #f4fdffe0;
+}
+
+#harga .card-harga .bronze {
+  background-color: #b8865d;
+}
+
+#harga .harga-description {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+}
+
+#harga .harga-image img {
+  width: 80px;
+}
+
+#harga .button-harga {
+  width: 75%;
+  height: 44px;
+}
+#harga .button-harga button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+
+#harga .button-harga button:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
+
+/* HARGA TEXT FORMAT */
+.harga-langganan {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.harga-small {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.harga-detail {
+  text-decoration: none;
+}
+
+.harga-detail:hover {
+  color: rgb(89, 165, 190);
+}
+
+/* profile */
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  gap: 30px;
+  padding: 40px 0;
+}
+.profile-title {
+  padding: 20px;
+}
+
+.card-profile {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  gap: 25px;
+  background-color:#e7f5ff;
+}
+
+.profile-image {
+  padding: 20px;
+}
+
+.profile-description {
+  width: 90%;
+  padding: 20px;
+}
+
+#profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.profile-title h2 {
+  font-size: 50px;
+}
+
+.profile-description p{
+  font-size: 16px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #468ec2;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* breakpoint */
+@media screen and (max-width: 1117px){
+  main #home{
+    flex-wrap: wrap;
+  }
+  .wave-top{
+    visibility: hidden;
+  }
+  .image-home img {
+    visibility: hidden;
+  }
+  nav ul{
+    display: none;
+  }
+}
+
